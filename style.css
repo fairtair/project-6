@@ -69,10 +69,46 @@ body {
 
 .gallery__item {
     max-width: 330px;
+    position: relative;
 }
 
 .image {
     width: 100%;
+}
+
+.image__buttons {
+    position: absolute;
+    right: 27px;
+    bottom: 24px;
+    display: flex;
+    gap: 21px;
+}
+
+.image__button {
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 32px;
+    cursor: pointer;
+}
+
+.image__like {
+    width: 39px;
+    background-image: url(./images/like.png);
+}
+
+.image__like:hover {
+    background-image: url(./images/like_active.png);
+}
+
+.image__choosen {
+    width: 30px;
+    background-image: url(./images/choosen.png);
+}
+.image__choosen:hover {
+    background-image: url(./images/Choosen_active.png);
 }
 
 .footer {
